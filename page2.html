@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome - Choose Your Interest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 60px;
+            background-color: white;
+        }
+        h1 {
+            color: black;
+        }
+        .interests {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .interest-btn {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 8px;
+            background-color: green
+;
+            color: white;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .interest-btn:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h2>Choose Your Interest</h2>
+    <div class="interests">
+        <div class="interest-square">
+            <a href="https://youtu.be/T-F-vVNVQ50?t=7" target="_blank">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.cSbv7vgGZsIhP6FOE-cyvwHaEK?pid=Api&P=0&h=180" alt="Technology">
+            </a>
+            <div style="margin-top:10px; font-weight:bold;">Technology</div>
+        </div>
+        <div class="interest-square">
+            <a href="https://youtu.be/dE8pUuSmnpc?t=3" target="_blank">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.MH65wXWmaQwxVd574gwNKwHaE8?pid=Api&P=0&h=180" alt="Art">
+            </a>
+            <div style="margin-top:10px; font-weight:bold;">Art</div>
+        </div>
+        <div class="interest-square">
+            <a href="https://youtu.be/hmFQqjMF_f0?t=3" target="_blank">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.XfBeRsLZGHawvY0iFlHp4AHaEO?pid=Api&P=0&h=180" alt="Sports">
+            </a>
+            <div style="margin-top:10px; font-weight:bold;">Sports</div>
+        </div>
+        <div class="interest-square">
+            <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" target="_blank">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.fZhEFhtn16fE7HzwHpTLyAHaEK?pid=Api&P=0&h=180" alt="Music">
+            </a>
+            <div style="margin-top:10px; font-weight:bold;">Music</div>
+        </div>
+    </div>
+    <div>
+        <form style="margin-top:40px;"></form>
+            <fieldset style="display:inline-block; border-radius:8px; border:1px solid red; padding:20px;">
+                <legend style="font-weight:bold;">Select Languages</legend>
+                <label>
+                    <input type="checkbox" name="language" value="c++">
+                    c++
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="language" value="java">
+                    java
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="language" value="python">
+                    python
+                </label>
+                <br>
+                <fieldset style="margin-top:20px; border-radius:8px; border:1px solid blue">
+                    <legend style="font-weight:bold;">Gender</legend>
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                </fieldset>
+                
+            </fieldset>
+        </form>
+</body>
+</html>
