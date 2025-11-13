@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Team Directory</h1>
+    
 
-    <h2>Add / Update Member</h2>
+    <h2>form</h2>
     <form>
-            <input type="hidden" id="memberId" value="">
-        <input type="hidden" id="nextId" value="3">
+            
         <div>
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required minlength="2" />
@@ -21,41 +21,18 @@
             <input id="email" name="email" type="email" required />
         </div>
         <div>
-            <label for="role">Role</label>
-            <select id="role" name="role" required>
-                <option value="">Select role</option>
-                <option>Developer</option>
-                <option>Designer</option>
-                <option>QA</option>
-                <option>Product</option>
-            </select>
+            <label for="rollno">Roll No</label>
+            <input id="rollno" name="rollno"  value= "12345" type="text" disabled />
         </div>
+       
         <div>
             <button type="submit" id="submitBtn">Add Member</button>
             <button type="reset" id="resetBtn" onclick="document.getElementById('memberId').value='';document.getElementById('submitBtn').textContent='Add Member';document.getElementById('formMessage').textContent='';">Reset</button>
         </div>
-        <p id="formMessage" aria-live="polite"></p>
+
+        
     </form>
 
-    <h2>Members Table</h2>
-    <table id="membersTable" border="1" cellspacing="0" cellpadding="6">
-        <thead>
-            <tr><th>ID</th><th>Name</th><th>Role</th></tr>
-        </thead>
-        <tbody>
-            <tr data-id="1">
-                <td>1</td>
-                <td>Alice</td>
-                <td>Developer</td>
-            </tr>
-            <tr data-id="2">
-                <td>2</td>
-                <td>Bob</td>
-                <td>Designer</td>
-            </tr>
-        </tbody>
-    </table>
-    <p id="tableInfo">2 member(s)</p>
     
 </body>
 </html>
