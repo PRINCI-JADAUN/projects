@@ -1,0 +1,15 @@
+.class box_1 {
+    align-items: center;
+    color: blue;
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 200px;
+    margin: 100px;
+}
+#box_2 {
+    color: green;
+    font-size: 18px;
+    border: 2px dashed red;
+    padding: 80px;
+    margin: 120px;
+}
