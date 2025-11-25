@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat Box</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #111;
+      }
+      header {
+        background-color: #000;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+      }
+
+      header img {
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #ff6b9a;
+      }
+      main {
+        text-align: center;
+        padding: 40px 20px;
+        background-image: url("https://plus.unsplash.com/premium_photo-1661963052800-6e6b2aeea937");
+        background-size: cover;
+        background-position: center;
+      }
+
+      h2 {
+        color: white;
+        font-size: 28px;
+      }
+
+      .albums, .artists {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 20px;
+      }
+      .album-box {
+        width: 150px;
+        height: 150px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(255,255,255,0.2);
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        display: block;
+      }
+
+      .album-box img {
+        width: 100%;
+        height: 105px;
+        object-fit: cover;
+      }
+
+      .artist-box {
+        width: 150px;
+        height: 150px;
+        background: white;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(255,255,255,0.3);
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .artist-box img {
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+      }
+        footer {
+        background-color: #000;
+        color: #ccc;
+        text-align: center;
+        padding: 12px;
+        font-size: 14px;
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+      <div class="logo">
+        <img src="https://png.pngtree.com/element_our/sm/20180415/sm_5ad31d9b53530.png" alt="logo">
+        Beat Box
+      </div>
+
+      <nav>
+        <a href="home">Home</a>
+        <a href="playlist">Playlist</a>
+        <a href="artist">Artist</a>
+        <a href="album">Album</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Albums</h2>
+      <div class="albums">
+
+        <a class="album-box" href="album1.html">
+          <img src="album1.jpg"> 
+        </a>
+
+        <a class="album-box" href="album2.html">
+          <img src="album2.jpg"> 
+        </a>
+
+        <a class="album-box" href="album3.html">
+          <img src="album3.jpg"> 
+        </a>
+
+        <a class="album-box" href="album4.html">
+          <img src="album4.jpg">
+        </a>
+
+        <a class="album-box" href="album5.html">
+          <img src="album5.jpg"> 
+        </a>
+
+      </div>
+      <h2 style="margin-top:40px;">Artists</h2>
+      <div class="artists">
+
+        <a class="artist-box" href="artist1.html">
+          <img src="https://i.scdn.co/image/ab6761610000e5ebb5dbf5c849221c25f85cf855"> 
+        </a>
+
+        <a class="artist-box" href="artist2.html">
+          <img src="https://i.scdn.co/image/ab6761610000e5ebb95da7ca3a8e2c58e4458b30">
+        </a>
+
+        <a class="artist-box" href="artist3.html">
+          <img src="https://i.scdn.co/image/ab6761610000e5ebd2c05f2f9c861d182d4c3fb1">
+        </a>
+      </div>
+    </main>
+    <footer>
+      © 2025 Beat Box Music Player
+    </footer>
+
+</body>
+</html>
