@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grit Application - User Login</title>
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef6ff;
+}
+
+.page-title {
+  text-align: center;
+  color: #2d3e50;
+}
+
+.sub-title {
+  text-align: center;
+  color: #444;
+  margin-top: -10px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  margin: 15px;
+}
+
+.container div {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background: #1e90ff;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  grid-area: menu;
+  font-size: 18px;
+}
+
+.menu a {
+  display: block;
+  padding: 6px 0;
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: darkred;
+}
+
+.content {
+  grid-area: content;
+}
+
+.content table td {
+  padding: 8px;
+  font-size: 16px;
+}
+
+input[type="email"], input[type="password"] {
+  padding: 7px;
+  width: 180px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  padding: 8px 18px;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #0b65c2;
+}
+
+
+</style>
+</head>
+<body>
+    <h1 class="page-title">Grit Application</h1>
+    <h3 class="sub-title">User Login</h3>
+    <div class="container">
+        <div class="header">Welcome to Grit</div>
+        <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        </div>
+        <div class="content">
+        <form action="/submit_login" method="post">
+            <table>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" >
+                        <input type= submit value= Login>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+        <div class="footer">© 2024 Grit Application</div>
+    </div>
+</body>
+</html>

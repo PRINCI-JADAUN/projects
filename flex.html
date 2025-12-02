@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: lightgray;
+            flex-wrap: wrap;
+            padding: 10px;
+            flex-flow: row wrap;
+            justify-content: center;
+            flex-shrink: initial;
+        }
+        .container div {
+            background-color: teal;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            flex-grow: 1;
+            flex-basis: 150px;
+            text-align: center;
+            flex-direction: column;
+        }
+        .h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .container_1 {
+            display: flex;
+            background-color:olivedrab;
+            flex-wrap: nowrap;
+            padding: 10px;
+            flex-flow: row nowrap;
+            justify-content: center;
+            flex-shrink: initial;
+        }
+        .container_1 div {
+            background-color: darkred;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            flex-grow: 1;
+            flex-basis: 150px;
+            text-align: center;
+            flex-direction: column;
+        }
+        .container_2 {
+            display: flex;
+            background-color: skyblue;
+            flex-wrap: wrap;
+            padding: 10px;
+            flex-flow: row wrap;
+            justify-content: center;
+            flex-shrink: initial;
+        }
+        .container_2 div {
+            background-color: blue;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            flex-grow: 1;
+            flex-basis: 150px;
+            text-align: center;
+            flex-direction: column;
+        }        
+        .container_3 {
+            display: flex;
+            background-color: plum;
+            flex-wrap: nowrap;
+            padding: 10px;
+            flex-flow: row nowrap;
+            justify-content: center;
+            flex-shrink: initial;
+        }
+        .container_3 div {
+            background-color: brown;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            flex-grow: 1;
+            flex-basis: 150px;
+            text-align: center;
+            flex-direction: column;
+        }
+        .container_4 {
+            display: flex;
+            background-color: lightseagreen;
+            flex-wrap: nowrap;
+            padding: 10px;
+            flex-flow: row nowrap;
+            justify-content: center;
+            flex-shrink: initial;
+        }
+        .container_4 div{
+           background-color:red;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            flex-grow: 1;
+            flex-basis: 150px;
+            text-align: center;
+            flex-direction: column; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="h1">
+    <h3>Flexbox Layout</h3>
+    </div>
+    <div class="container">
+        <div>box-1</div>
+        <div>box-2</div>
+        <div>box-3</div>    
+        <div>box-4</div>
+        <div>box-5</div>
+    </div>
+    <div class="h1">
+    <h4>container_1</h4>
+    </div>
+    <div class="container_1">
+        <div>box-6</div>
+        <div>box-7</div>
+        <div>box-8</div>    
+        <div>box-9</div>
+        <div>box-10</div>
+    </div>
+    <div class="h1">
+    <h4>container_2</h4>
+    </div>
+    <div class="container_2">
+        <div>box-11</div>
+        <div>box-12</div>
+        <div>box-13</div>    
+        <div>box-14</div>
+        <div>box-15</div>
+    </div>
+    <div class="h1">
+    <h4>container_3</h4>
+    </div>
+    <div class="container_3">
+        <div>box-16</div>
+        <div>box-17</div>
+        <div>box-18</div>    
+        <div>box-19</div>
+        <div>box-20</div>   
+    </div>
+    <div class="h1">
+        <h4>container_4</h4>
+    </div>
+    <div class="container_4">
+        <div>box-21</div>
+        <div>box-22</div>
+        <div>box-23</div>
+        <div>box-24</div>
+        <div>box-25</div>
+    </div>
+
+</body>
+</html>
