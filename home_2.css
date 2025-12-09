@@ -1,0 +1,96 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Background Carousel ===== */
+.bg-carousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: slideShow 15s infinite;
+}
+
+/* Images */
+.img1 { background-image: url("https://tse1.mm.bing.net/th/id/OIP.W1Z6cZpTZvYZWpaCOcG_XQHaE8?pid=Api&P=0&h=180"); }
+.img2 { background-image: url("https://tse3.mm.bing.net/th/id/OIP.iSiW43OQGpcKykecEQFQEAHaE7?pid=Api&P=0&h=180"); animation-delay: 5s; }
+.img3 { background-image: url("https://tse2.mm.bing.net/th/id/OIP.itqlhoTL-hHSibWjSbYqpAHaE8?pid=Api&P=0&h=180"); animation-delay: 10s; }
+
+@keyframes slideShow {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  color: #fff;
+  padding: 40px 0;
+  text-shadow: 0 0 10px #000;
+}
+
+/* ===== Category Cards on Background ===== */
+.categories-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.category-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  width: 250px;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #181818;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  margin-top: 40px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Class & ID with Box Model Demo</title>
+  <style>
+    
+    #container {
+      max-width: 900px;
+      margin: 0 auto; 
+      padding: 20px;
+      border: 2px solid white;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(11,32,51,0.06);
+    }
+    .card {
+      display: inline-block;
+      vertical-align: top;
+      width: 280px;          
+      height: 160px;         
+      margin: 12px;         
+      padding: 16px;         
+      border: 3px solid skyblue; 
+      border-radius: 6px;
+      background: linear-gradient(180deg, white, white);
+    }
+
+      </style>
+</head>
+<body margin: 24px; bgcolor="red"; text_color="blue">
+  <div id="container">
+    <h1>Class &amp; ID with Box Model</h1>
+    <p>Below are three boxes that use a . The outer wrapper is an . Inspect to see margin, border, padding.</p>
+    <div class="card">
+      <h3>Box A (default)</h3>
+      <p>Uses  — width includes padding &amp; border because of .</p>
+    </div>
+    
+  </div>
+</body>
+</html>
