@@ -28,9 +28,9 @@
 }
 
 /* Images */
-.img1 { background-image: url("https://tse1.mm.bing.net/th/id/OIP.W1Z6cZpTZvYZWpaCOcG_XQHaE8?pid=Api&P=0&h=180"); }
-.img2 { background-image: url("https://tse3.mm.bing.net/th/id/OIP.iSiW43OQGpcKykecEQFQEAHaE7?pid=Api&P=0&h=180"); animation-delay: 5s; }
-.img3 { background-image: url("https://tse2.mm.bing.net/th/id/OIP.itqlhoTL-hHSibWjSbYqpAHaE8?pid=Api&P=0&h=180"); animation-delay: 10s; }
+.img1 { background-image: url("https://www.istockphoto.com/photo/female-student-gm1264296727-370253806?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_bottombanner_media&utm_term=study"); }
+.img2 { background-image: url("https://static.vecteezy.com/system/resources/previews/023/740/386/large_2x/medicine-doctor-with-stethoscope-in-hand-on-hospital-background-medical-technology-healthcare-and-medical-concept-photo.jpg"); animation-delay: 5s; }
+.img3 { background-image: url("https://image.slidesdocs.com/responsive-images/background/illustration-of-a-smartphone-screen-with-a-cartoon-doctor-providing-online-medical-services-through-consultation-powerpoint-background_0632eaa724__960_540.jpg"); animation-delay: 10s; }
 
 @keyframes slideShow {
   0% { opacity: 0; }
