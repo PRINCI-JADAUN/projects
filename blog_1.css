@@ -36,25 +36,42 @@ header h1 {
     gap: 20px;
 }
 
-/* Right sidebar */
-.right {
-    width: 35%;
+
+
+/* RIGHT SIDEBAR */
+.sidebar {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
-/* Box styling */
-.box {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+/* CARDS */
+.info-card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.small {
-    height: 150px;
+.info-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 8px;
 }
+
+.info-card h4 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #666;
+}
+
 
 @media (max-width: 768px) {
     .container {
